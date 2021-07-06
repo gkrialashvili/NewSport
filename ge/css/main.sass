@@ -1226,8 +1226,33 @@ button.owl-next
         left: -21px
         min-width: 313px
         opacity: 0
-    // my styles
 
+.sport-promotions
+    margin-top: 110px
+    position: relative
+
+.sport-promotions-images
+    position: absolute
+    top: 50px
+    display: flex
+    width: 100%
+    align-items: center
+    justify-content: space-evenly
+.sport-promotions__img
+    width: 200px
+
+    
+    img
+        object-fit: contain
+        height: 100%
+        filter: grayscale(1)
+        border-radius: 15px
+        filter: grayscale(1)
+        transition: all 700ms ease-in-out
+        &:hover
+            transform: scale(1.2)
+            filter: grayscale(0)
+    // my styles
 @media screen and ( max-width: 800px )
     .carousel-cont
         max-width: 517px
