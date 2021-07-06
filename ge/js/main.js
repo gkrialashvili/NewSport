@@ -118,8 +118,6 @@ $("#video-rgol").click(function (e) {
   video.pause();
   $("#playButton").fadeIn(250);
   counter++;
-  if (counter === 10) alert("კაააააი კაააააი კაააააი");
-  else if (counter >= 15) alert("ნუ შეეცი");
 });
 
 const todaysDate = new Date();
@@ -171,6 +169,9 @@ $(document).ready(function () {
         break;
       case "btn3":
         btn3();
+        break;
+      case "btn4":
+        btn4();
         break;
       case "btn5":
         btn5();
@@ -227,6 +228,16 @@ $(document).ready(function () {
     }, 1800)
     setTimeout(function () { $(".pop-up3-text").animate({ width: "100%", opacity: 1, }, 1500) }, 1000)
   }
+
+  function btn4() {
+    $(".content__4__popup").animate({
+      width: "80%",
+      opacity: 1,
+    }, 1000)
+    setTimeout(function () { $(".content__4__popup .dot__outer").animate({ opacity: 1, }, 1500) }, 1200)
+    setTimeout(function () { $(".content__4__popup .info__right").animate({ opacity: 1, }, 1500) }, 1600)
+  }
+
   function btn5() {
     $(".content__5__title").animate({
       width: "120%",
@@ -240,38 +251,23 @@ $(document).ready(function () {
     $(".pop-up6-bg").animate({
       opacity: 1,
     }, 1300)
-    // setTimeout(function () { $(".pop-up__1 .dot__outer").animate({ opacity: 1, }, 1200) }, 1000)
-
-    // setTimeout(function () { $(".pop-up__1 .info__left").animate({ opacity: 1, }, 1500) }, 1200)
-
-    // setTimeout(function () { $(".pop-up__1 .dot__outer").animate({ opacity: 0, }, 1000) }, 1400)
-
-    // setTimeout(function () { $(".pop-up__1 .info__left").animate({ opacity: 0, }, 1000) }, 1400)
-
-    // setTimeout(function () { $(".pop-up__2 .dot__outer").animate({ opacity: 1, }, 2500) }, 2500)
-
-    // setTimeout(function () { $(".pop-up__2 .info__left").animate({ opacity: 1, }, 2800) }, 2500)
-
     linearFade(".pop-up__", ".dot__outer");
     linearFade(".pop-up__", ".info__left");
-
-    // setTimeout(function () { $(".pop-up__2 .dot__outer").animate({ opacity: 0, }, 1000) }, 2000)
-    // setTimeout(function () { $(".pop-up__2 .info__left").animate({ opacity: 0, }, 1000) }, 2000)
   }
 
-  function linearFade(parentClass, childClass, fadeStart=1000, max=2, animStart=1000, animGap=4000, wait=2500) {
+  function linearFade(parentClass, childClass, fadeStart = 1000, max = 2, animStart = 1000, animGap = 4000, wait = 2500) {
     var fadeEnd = 1000;
     var wait = wait;
     for (let index = 1; index <= max; index++) {
-      let block = parentClass+index+" "+childClass;
+      let block = parentClass + index + " " + childClass;
       let wait = 2500;
       window.timerFadein = setTimeout(function () {
         animateFade(block, fadeStart, false)
-        }, animStart);
+      }, animStart);
       window.timerFadeout = setTimeout(function () {
         animateFade(block, fadeEnd)
-        }, animStart+wait);
-        animStart += animGap; 
+      }, animStart + wait);
+      animStart += animGap;
     }
   }
 
@@ -305,6 +301,7 @@ $(document).ready(function () {
     $(".st2").css({ "opacity": "0" })
     $(".st4").css({ "opacity": "0" })
     $(".st1").css({ "opacity": "0" })
+    $(".content__4__popup").css({ "opacity": "0" })
     $(".content__5__title").animate({
       width: "100%",
       opacity: 0,
@@ -322,7 +319,7 @@ $(document).ready(function () {
     $(".pop-up__1 .info__left").clearQueue()
     $(".pop-up__2 .dot__outer").clearQueue()
     $(".pop-up__2 .info__left").clearQueue()
-    
+
     $(".pop-up__1 .dot__outer").stop()
     $(".pop-up__1 .info__left").stop()
     $(".pop-up__2 .dot__outer").stop()
