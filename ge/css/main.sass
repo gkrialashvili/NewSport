@@ -96,9 +96,10 @@ table
 
 .header-text
     font-family: $neueCrocoCaps
-    font-size: 40px
+    font-size: 32px
     line-height: 40px
-    margin-top: 694px
+    margin-top: 662px
+    margin-bottom: 30px
 
 .date-header span
     font-size: 20px
@@ -1002,6 +1003,230 @@ button.owl-next
 
 .t-m
     display: none
+// my styles
+.main-block__btn
+    width: 164px
+    height: 48px
+    background: #0d28665d
+    border-radius: 30px
+    font-size: 12px
+    border: 3px solid #0a64a3
+    display: flex
+    align-items: center
+    justify-content: center
+    color: #6e7a9f
+
+.main-block
+    display: flex
+    margin-bottom: 35px
+.computer
+    width: 100%
+    height: 100%
+
+.main-block__btn__wrapper
+    width: 183px
+    height: 63px
+    background: #0d28665d
+    border-radius: 30px
+    display: flex
+    align-items: center
+    justify-content: center
+    cursor: pointer
+    margin-bottom: 5px
+
+.main-block__btn__wrapper.active
+    background: #0b297f
+
+.mobile
+    position: absolute
+    right: -20px
+    top: 145px
+    z-index: 50
+
+.main-block__btn.active
+    background: #0b297f
+    color: white
+    border: 3px solid #14effa
+    -webkit-box-shadow: 0px 0px 25px 2px rgba(20,239,250,0.43)
+    box-shadow: 0px 0px 25px 2px rgba(20,239,250,0.43)
+
+.buttons
+    align-self: flex-start
+
+.content__group
+    .content__2
+        display: none
+    .content__leptop
+        position: absolute
+        top: 6px
+        right: 124px
+        display: flex
+        justify-content: center
+    .content__mobile.content__mobile__2
+        position: absolute
+        z-index: 60
+        right: -13px
+        top: 149px
+        width: 143px
+
+    .content__mobile
+        position: absolute
+        z-index: 60
+        right: -14px
+        top: 151px
+        width: 145px
+        img
+            border-radius: 24px
+    .content__3
+        display: none
+    .content__4
+        display: none
+    .content__5
+        display: none
+    .content__6
+        display: none
+    .content__7
+        display: none
+
+.pop-up2, .pop-up1
+    position: absolute
+    margin: 0 auto
+    top: 68px
+    width: 100%
+    opacity: 0
+
+.dot
+    width: 10px
+    height: 10px
+    border-radius: 50%
+    background: white
+
+.dot__outer
+    background: transparent
+    border: 2px solid white
+    width: 20px
+    position: absolute
+    height: 20px
+    display: flex
+    align-items: center
+    justify-content: center
+    border-radius: 50%
+    opacity: 0
+.content__1
+    .dot__outer
+        right: 214px
+        top: 50px
+    .info__right
+        right: 223px
+        top: 75px
+.content__2
+    .dot__outer
+        left: 251px
+        top: 33px
+    .info__left
+        right: 203px
+        top: 61px
+.info__right
+    padding: 20px
+    background: white
+    color: black
+    position: absolute
+    border-radius: 20px 0px 15px 20px
+    opacity: 0
+
+.info__left
+    padding: 20px
+    background: white
+    color: black
+    position: absolute
+    border-radius: 0px 15px 20px 20px
+    opacity: 0
+.pop-up3
+    position: absolute
+    left: -26px
+    bottom: 138px
+    opacity: 0
+    z-index: 50
+.pop-up3-text
+    position: absolute
+    top: 99px
+    right: -155px
+    opacity: 0
+.arrow
+    position: absolute
+    width: 42%
+    left: 10px
+    z-index: 49
+.st4, .st1, .st2, .st3, .st5, .st0, .st6
+    opacity: 0
+
+.st6
+    transform-origin: 50% 70%
+    transform: rotate(270deg)
+
+.content__5__title
+    position: absolute
+    top: 50px
+    opacity: 0
+
+.content__leptop__6
+    display: flex
+    align-items: center
+    justify-content: center
+
+.content__5__box
+    position: absolute
+    left: 80px
+    top: 136px
+    opacity: 0
+    display: flex
+    align-items: center
+    justify-content: center
+.pop-up6-icons
+    position: absolute
+    left: 37px
+    top: 23px
+.content__leptop__5
+    .info__left
+        bottom: 80px
+        left: 180px
+.content__5__box
+    .dot__outer
+        bottom: -8px
+        opacity: 0
+.pop-up6-bg
+    position: absolute
+    right: 29px
+    top: 85px
+    opacity: 0
+
+.pop-up__1
+    position: absolute
+    right: 515px
+    top: 182px
+    .dot__outer
+        opacity: 0
+    .info__left
+        position: absolute
+        top: 29px
+        left: 8px
+        min-width: 313px
+        opacity: 0
+
+.pop-up__2
+    position: absolute
+    right: 400px
+    top: 182px
+    .dot__outer
+        opacity: 0
+        left: -30px
+    .info__left
+        position: absolute
+        top: 29px
+        left: -21px
+        min-width: 313px
+        opacity: 0
+    // my styles
 
 @media screen and ( max-width: 800px )
     .carousel-cont
