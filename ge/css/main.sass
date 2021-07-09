@@ -1068,17 +1068,14 @@ button.owl-next
             position: absolute
             width: 80%
             top: 120px
-            opacity: 0
             .dot__outer
-                opacity: 0
                 position: absolute
                 right: 165px
                 bottom: -4px
                 z-index: 5
             .info__right
-                opacity: 0
                 position: absolute
-                bottom: -70px
+                bottom: -90px
                 right: 173px
         .popup4__btn
             width: 108px
@@ -1122,13 +1119,76 @@ button.owl-next
         display: none
     .content__7
         display: none
+        .live-icon
+            position: absolute
+            left: -35px
+            top: 77px
+        .live-title
+            margin-bottom: 20px
+            display: flex
+            align-items: center
+.live-popups
+    .live-popup1
+        .info__left
+            position: absolute
+            bottom: -107px
+            left: 58px
+        .dot__outer
+            left: 50px
+
+    .live-popup2
+        .info__left
+            position: absolute
+            bottom: -107px
+            left: 131px
+        .dot__outer
+            left: 120px
+
+    .live-popup3
+        .info__left
+            position: absolute
+            bottom: -107px
+            left: 205px
+        .dot__outer
+            left: 195px
+
+    .live-popup4
+        .info__left
+            position: absolute
+            bottom: -107px
+            left: 275px
+        .dot__outer
+            left: 265px
+
+    .live-popup5
+        .info__left
+            position: absolute
+            bottom: -107px
+            left: 345px
+        .dot__outer
+            right: 157px
+
+    .live-popup6
+        .info__right
+            position: absolute
+            bottom: -106px
+            right: 114px
+        .dot__outer
+            right: 107px
+
+    .live-popup7
+        .info__right
+            position: absolute
+            bottom: -88px
+            right: 49px
+        .dot__outer
+            right: 43px
 
 .pop-up2, .pop-up1
     position: absolute
     margin: 0 auto
     top: 68px
-    width: 100%
-    opacity: 0
+    width: 120%
 
 .dot
     width: 10px
@@ -1146,7 +1206,7 @@ button.owl-next
     align-items: center
     justify-content: center
     border-radius: 50%
-    opacity: 0
+    opacity: 1
 .content__1
     .dot__outer
         right: 214px
@@ -1156,10 +1216,10 @@ button.owl-next
         top: 75px
 .content__2
     .dot__outer
-        left: 251px
+        left: 110px
         top: 33px
     .info__left
-        right: 203px
+        left: 119px
         top: 61px
 .info__right
     padding: 20px
@@ -1167,33 +1227,39 @@ button.owl-next
     color: black
     position: absolute
     border-radius: 20px 0px 15px 20px
-    opacity: 0
+    font-weight: 600
+    text-transform: uppercase
+    ont-feature-settings: case "on"
+    font-family: Crocosanscaps,sans-serif
+    min-width: 400px
 
 .info__left
+    min-width: 400px
     padding: 20px
     background: white
     color: black
     position: absolute
     border-radius: 0px 15px 20px 20px
-    opacity: 0
+    font-weight: 600
+    font-family: Crocosanscaps,sans-serif
+    text-transform: uppercase
+    ont-feature-settings: case "on"
 .pop-up3
     position: absolute
     left: -26px
     bottom: 138px
-    opacity: 0
     z-index: 50
 .pop-up3-text
     position: absolute
     top: 99px
-    right: -155px
-    opacity: 0
+    right: -70px
+
 .arrow
     position: absolute
     width: 42%
     left: 10px
     z-index: 49
 .st4, .st1, .st2, .st3, .st5, .st0, .st6
-    opacity: 0
 
 .st6
     transform-origin: 50% 70%
@@ -1202,7 +1268,6 @@ button.owl-next
 .content__5__title
     position: absolute
     top: 50px
-    opacity: 0
 
 .content__leptop__6
     display: flex
@@ -1213,7 +1278,7 @@ button.owl-next
     position: absolute
     left: 80px
     top: 136px
-    opacity: 0
+
     display: flex
     align-items: center
     justify-content: center
@@ -1228,40 +1293,51 @@ button.owl-next
 .content__5__box
     .dot__outer
         bottom: -8px
-        opacity: 0
+
 .pop-up6-bg
     position: absolute
     right: 29px
     top: 85px
-    opacity: 0
 
 .pop-up__1
     position: absolute
     right: 515px
     top: 182px
-    .dot__outer
-        opacity: 0
     .info__left
         position: absolute
         top: 29px
         left: 8px
         min-width: 313px
-        opacity: 0
 
 .pop-up__2
     position: absolute
     right: 400px
     top: 182px
     .dot__outer
-        opacity: 0
         left: -30px
     .info__left
         position: absolute
         top: 29px
         left: -21px
         min-width: 313px
-        opacity: 0
-
+.pop-up__3
+    position: absolute
+    top: 181px
+    right: 339px
+    .info__right
+        position: absolute
+        top: 29px
+        left: -306px
+        min-width: 319px
+.pop-up__4
+    position: absolute
+    top: 181px
+    right: 240px
+    .info__right
+        position: absolute
+        top: 29px
+        left: -306px
+        min-width: 319px
 .sport-promotions
     margin-top: 110px
     position: relative
@@ -1294,6 +1370,10 @@ button.owl-next
     100%
         box-shadow: 0 0 0 0 transparent
 
+.arrow__1
+    position: absolute
+    top: 161px
+    right: 58px
     // my styles
 @media screen and ( max-width: 800px )
     .carousel-cont
@@ -1711,3 +1791,120 @@ button.owl-next
 @keyframes pulsing
     to
         box-shadow: 0 0 0 10px rgba(24, 180, 53, 0)
+
+.animate-children
+    .animate
+        animation: fadeIn 1s forwards ease-in-out
+        opacity: 0
+        &--delay-2s
+            animation-delay: 0s
+        &--delay-4s
+            animation-delay: 1.5s
+        &--delay-6s
+            animation-delay: 3s
+        &--delay-8s
+            animation-delay: 4.5s
+        &--delay-10s
+            animation-delay: 6s
+    .animateStep
+        animation: fadeInStep 5s forwards ease-in-out
+        opacity: 0
+        &--delay-3s
+            animation-delay: 8s
+        &--delay-6s
+            animation-delay: 12s
+        &--delay-9s
+            animation-delay: 16s
+        &--delay-12s
+            animation-delay: 20s
+        &--delay-15s
+            animation-delay: 24s
+        &--delay-18s
+            animation-delay: 28s
+        &--delay-21s
+            animation-delay: 32s
+    .animateDot
+        animation: fadeInDot 2s forwards ease-in-out
+        opacity: 0
+        &--delay-2s
+            animation-delay: 3s
+        &--delay-4s
+            animation-delay: 4s
+        &--delay-6s
+            animation-delay: 5s
+        &--delay-8s
+            animation-delay: 6s
+        &--delay-10s
+            animation-delay: 7s
+        &--delay-12s
+            animation-delay: 8s
+        &--delay-14s
+            animation-delay: 9s
+    .animateSpeed
+        animation: fadeInSpeed 0.5s forwards ease-in-out
+        opacity: 0
+        &--delay-1s
+            animation-delay: 4s
+        &--delay-2s
+            animation-delay: 4.2s
+        &--delay-3s
+            animation-delay: 4.4s
+        &--delay-4s
+            animation-delay: 4.6s
+        &--delay-5s
+            animation-delay: 4.8s
+        &--delay-6s
+            animation-delay: 5s
+
+    .animateArrow
+        animation: fadeInArrow 1s forwards ease-in-out
+        opacity: 0
+        &--delay-7s
+            animation-delay: 5.2s
+.animatedMobile
+    animation: swipeMobile 2s forwards ease-in-out
+@keyframes fadeIn
+    0%
+        opacity: 0
+    100%
+        opacity: 1
+
+@keyframes fadeInStep
+    0%
+        opacity: 0
+    30%
+        opacity: 1
+    70%
+        opacity: 1
+    100%
+        opacity: 0
+@keyframes fadeInDot
+    0%
+        opacity: 0
+    100%
+        opacity: 1
+
+@keyframes fadeInSpeed
+    0%
+        opacity: 0
+    100%
+        opacity: 1
+
+@keyframes fadeInArrow
+    0%
+        opacity: 0
+        transform: rotate(-30deg)
+    100%
+        opacity: 1
+        transform: rotate(57deg)
+
+@keyframes swipeMobile
+    0%
+        transform: translateX(0)
+    50%
+        opacity: 0
+        transform: translateX(-100px)
+
+    100%
+        opacity: 1
+        transform: translateX(0px)

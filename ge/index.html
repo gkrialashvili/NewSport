@@ -156,43 +156,59 @@
             <div class="computer">
                <img src="./images/computer.png" alt="">
             </div>
-            <div class="mobile">
-               <img src="./images/phone.png" alt="">
-            </div>
          </div>
          </div>
-         <div class="content__group">
-               <div class="leptop__content content__1">
+         <div class="content__group ">
+               <div class="leptop__content content__1 animate-children">
                   <div class="content__leptop"><img src="./images/leptop__content__1.png" alt="">
-                     <div class="pop-up1"><img src="./images/pop-up1.png" alt="pop-up2"> 
-                        <div class="dot__outer">
+                     <div class="pop-up1">
+
+                        <div class="animate--delay-2s"><img src="./images/pop-up1.png" alt="pop-up1" class="animate"> </div> 
+                        <div class="dot__outer animate animate--delay-4s">
                            <div class="dot"></div>
                         </div>
-                        <div class="info__right">
-                           Lorem ipsum dolor sit, amet consectetur adipisicing
+                        <div class="info__right animate animate--delay-6s">
+                           ყველაზე მაღალი კოეფიციენტი ნებისმიერ პოზიციაზე
+                        </div>
+                     </div>
+                     <div class="arrow__1">
+                        <div class="arrow__1__arr animate animate--delay-10s">
+                           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="165" height="104" viewBox="0 0 165 104">
+                             <image id="Vector_Smart_Object" data-name="Vector Smart Object" width="165" height="104" xlink:href="data:img/png;base64,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"/>
+                           </svg>
+                        </div>
+                        <div class="arrow__1__stick animate animate--delay-8s">
+                           <img src="./images/sticks.svg" alt="">
                         </div>
                      </div>
                   </div>
-                  <div class="content__mobile"><img src="./images/mobile__content__1.png" alt=""></div>
+                  <div class="mobile animatedMobile">
+                     <img src="./images/phone.png" alt="">
+                  </div>
+                  <div class="content__mobile animatedMobile"><img src="./images/mobile__content__1.png" alt=""></div>
                </div>
-               <div class="leptop__content content__2">
+               <div class="leptop__content content__2 animate-children">
                   <div class="content__leptop"><img src="./images/leptop__content__2.png" alt="">
-                     <div class="pop-up2"><img src="./images/pop-up2.png" alt="pop-up2"> 
-                        <div class="dot__outer">
+                     <div class="pop-up2">
+                       <div class="animate animate--delay-2s"><img src="./images/pop-up2.png" alt="pop-up2"></div>  
+                        <div class="dot__outer animate animate--delay-4s">
                            <div class="dot"></div>
                         </div>
-                        <div class="info__left">
+                        <div class="info__left animate animate--delay-6s">
                            Lorem ipsum dolor sit, amet consectetur adipisicing
                         </div>
                      </div>
                   </div>
-                  <div class="content__mobile content__mobile__2"><img src="./images/mobile__content__2.png" alt=""></div>
+                  <div class="mobile animatedMobile">
+                     <img src="./images/phone.png" alt="">
+                  </div>
+                  <div class="animatedMobile content__mobile animatedMobile content__mobile__2"><img src="./images/mobile__content__2.png" alt=""></div>
                   
                </div>
-               <div class="leptop__content content__3">
+               <div class="leptop__content content__3 animate-children">
                   <div class="content__leptop"><img src="./images/leptop__content__3.png" alt="">
                      <div class="content__leptop"><img src="./images/leptop__content__3.png" alt="">
-                        <div class="pop-up3"><img src="./images/pop-up3.png" alt="pop-up3"> </div>
+                        <div class="pop-up3 animate animate--delay-4s"><img src="./images/pop-up3.png" alt="pop-up3"> </div>
                         <div class="arrow">
                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                            viewBox="0 0 1135.7 1037.3" style="enable-background:new 0 0 1135.7 1037.3;" xml:space="preserve">
@@ -205,19 +221,19 @@
                           .st5{fill:#6A6FFD;}
                           .st6{fill:#FFFFFF;}
                        </style>
-                       <path class="st0" d="M299,444.3c4.4-4.4,9-8.8,13.6-13l-81-86.3c-5.5,5.1-10.9,10.3-16.2,15.5c-25.2,25.2-48,52.8-67.9,82.3
+                       <path class="st0 animateSpeed animateSpeed--delay-2s" d="M299,444.3c4.4-4.4,9-8.8,13.6-13l-81-86.3c-5.5,5.1-10.9,10.3-16.2,15.5c-25.2,25.2-48,52.8-67.9,82.3
                           c-16.2,24-30.6,49.3-42.8,75.5l110.4,43.4C236.3,518.3,264.5,478.8,299,444.3z"/>
-                       <path class="st1" d="M1002.1,360.6c-25.2-25.2-52.8-48-82.3-67.9c-8.9-6-18-11.8-27.2-17.2L830,375.9c32.1,18.8,61.7,41.7,88.4,68.4
+                       <path class="st1 animateSpeed animateSpeed--delay-6s" d="M1002.1,360.6c-25.2-25.2-52.8-48-82.3-67.9c-8.9-6-18-11.8-27.2-17.2L830,375.9c32.1,18.8,61.7,41.7,88.4,68.4
                           c2.7,2.7,5.3,5.3,7.9,8.1l101.1-61.2c0.7-0.4,1.4-0.8,2.1-1.1C1020.7,379.9,1011.5,370,1002.1,360.6z"/>
-                       <path class="st2" d="M608.7,316c14.4,0,28.7,0.7,42.8,2.1L669,200.9c-19.9-2.1-40.1-3.2-60.3-3.2c-57.1,0-112.9,8.5-166.5,25.4
+                       <path class="st2 animateSpeed animateSpeed--delay-4s" d="M608.7,316c14.4,0,28.7,0.7,42.8,2.1L669,200.9c-19.9-2.1-40.1-3.2-60.3-3.2c-57.1,0-112.9,8.5-166.5,25.4
                           l38,112.2C521.5,322.4,564.6,316,608.7,316z"/>
-                       <path class="st3" d="M96.2,537.4C68.6,602.6,54,671.7,52.6,742.9H171c1.4-55.2,12.9-108.8,34.3-159.4c0.5-1.3,1.1-2.5,1.6-3.8
+                       <path class="st3 animateSpeed animateSpeed--delay-1s" d="M96.2,537.4C68.6,602.6,54,671.7,52.6,742.9H171c1.4-55.2,12.9-108.8,34.3-159.4c0.5-1.3,1.1-2.5,1.6-3.8
                           L96.6,536.4C96.4,536.7,96.3,537.1,96.2,537.4z"/>
-                       <path class="st4" d="M779.2,350.4c11.4,4.8,22.6,10.1,33.5,15.9l62.7-100.6c-16.3-8.9-33.1-17.1-50.2-24.3
+                       <path class="st4 animateSpeed animateSpeed--delay-5s" d="M779.2,350.4c11.4,4.8,22.6,10.1,33.5,15.9l62.7-100.6c-16.3-8.9-33.1-17.1-50.2-24.3
                           c-44-18.6-89.7-31.3-136.6-38.1l-17.5,117.1C708.3,325.7,744.4,335.7,779.2,350.4z"/>
-                       <path class="st5" d="M438.3,350.4c7.6-3.2,15.4-6.2,23.1-9l-37.9-112.1c-10.5,3.7-21,7.8-31.3,12.1c-33,13.9-64.8,31.2-94.5,51.3
+                       <path class="st5 animateSpeed animateSpeed--delay-3s" d="M438.3,350.4c7.6-3.2,15.4-6.2,23.1-9l-37.9-112.1c-10.5,3.7-21,7.8-31.3,12.1c-33,13.9-64.8,31.2-94.5,51.3
                           c-17.8,12-35,25.2-51.3,39.2l81.1,86.3C360.8,390.2,398,367.4,438.3,350.4z"/>
-                       <path class="st6" d="M576.8,143.6c0.3,4.3,0.7,8.6,1,12.9c0.4,5.2,0.8,10.3,1.2,15.5c0.4,4.8,0.7,9.6,1.1,14.4
+                       <path class="st6 animateArrow animateArrow--delay-7s" d="M576.8,143.6c0.3,4.3,0.7,8.6,1,12.9c0.4,5.2,0.8,10.3,1.2,15.5c0.4,4.8,0.7,9.6,1.1,14.4
                           c0.4,5.2,0.8,10.4,1.2,15.7c0.4,4.7,0.7,9.5,1.1,14.2c0.4,5.2,0.8,10.3,1.2,15.5c0.4,4.8,0.7,9.6,1.1,14.4c0.5,6.6,1,13.3,1.6,19.9
                           c0.4,4.7,0.7,9.3,1.1,14c0.4,5.3,0.8,10.6,1.2,15.8c0.5,6.2,0.9,12.4,1.4,18.6c0.5,6.6,1,13.1,1.6,19.7c0.4,4.7,0.7,9.3,1.1,14
                           c0.4,5.3,0.8,10.6,1.2,15.8c0.4,4.8,0.7,9.6,1.1,14.4c0.4,5,0.8,9.9,1.1,14.9c0.4,5,0.8,9.9,1.2,14.9c0.5,6.6,1.1,13.1,1.6,19.7
@@ -239,67 +255,174 @@
                        </svg>
                        
                         </div>
-                        <div class="pop-up3-text"><img src="./images/pop-up3-text.png" alt=""></div>
+                        <div class="pop-up3-text animate animate--delay-2s"><img src="./images/pop-up3-text.png" alt=""></div>
                      </div>
                   </div>
-                  <div class="content__mobile content__mobile__2"><img src="./images/mobile__content__2.png" alt=""></div> 
+                  <div class="mobile animatedMobile">
+                     <img src="./images/phone.png" alt="">
+                  </div>
+                  <div class="animatedMobile content__mobile animatedMobile content__mobile__2"><img src="./images/mobile__content__2.png" alt=""></div> 
                </div>
-               <div class="leptop__content content__4">
+               <div class="leptop__content content__4 animate-children">
                   <div class="content__leptop"><img src="./images/leptop__content__4.png" alt="" class="content__4__img">
-                     <div class="content__4__popup"><img src="./images/pop-up4.png" alt="">
-                        <div class="popup4__btn"><img src="./images/rewrite_btn.png" alt="">
+                     <div class="content__4__popup">
+                        <div class="animate animate--delay-2s">
+                           <img src="./images/pop-up4.png" alt="">
+                           <div class="popup4__btn"><img src="./images/rewrite_btn.png" alt="">
+                           </div>
                         </div>
-                        <div class="dot__outer">
+                        <div class="dot__outer animate animate--delay-4s">
                            <div class="dot"></div>
                         </div>
-                        <div class="info__right">
+                        <div class="info__right animate animate--delay-6s">
                            Lorem ipsum dolor sit, amet consectetur adipisicing
                         </div>
                      </div>
                   </div>
-                  <div class="content__mobile content__mobile__2"><img src="./images/mobile__content__4.png" alt=""></div>
+                  <div class="mobile animatedMobile">
+                     <img src="./images/phone.png" alt="">
+                  </div>
+                  <div class="animatedMobile content__mobile animatedMobile content__mobile__2"><img src="./images/mobile__content__4.png" alt=""></div>
                </div>
-               <div class="leptop__content content__5">
+               <div class="leptop__content content__5 animate-children">
                   <div class="content__leptop content__leptop__5"><img src="./images/leptop__content__5.png" alt="">
-                     <div class="content__5__title"><img src="./images/screen-5-title.png" alt=""></div>
-                     <div class="content__5__box"><img src="./images/content__5__box.png" alt="">
-                        <div class="dot__outer">
+                     <div class="content__5__title animate animate--delay-2s"><img src="./images/screen-5-title.png" alt=""></div>
+                     <div class="content__5__box animate animate--delay-4s"><img src="./images/content__5__box.png" alt="">
+                        <div class="dot__outer animate animate--delay-6s">
                            <div class="dot"></div>
                         </div>
                      </div>
-                     <div class="info__left">
+                     <div class="info__left animate animate--delay-8s">
                         Lorem ipsum dolor sit, amet consectetur adipisicing
                      </div>
                   </div>
-                  <div class="content__mobile"><img src="./images/mobile__content__5.png" alt=""></div>
+                  <div class="mobile animatedMobile">
+                     <img src="./images/phone.png" alt="">
+                  </div>
+                  <div class="animatedMobile content__mobile"><img src="./images/mobile__content__5.png" alt=""></div>
                </div>
-               <div class="leptop__content content__6">
+               <div class="leptop__content content__6 animate-children">
                   <div class="content__leptop"><img src="./images/leptop__content__6.png" alt="">
-                     <div class="pop-up6-bg"> <img src="./images/pop-up6-bg.png" alt="">
-                      <div class="pop-up6-icons"><img src="./images/pop-up6-icons.png" alt=""></div> 
+                     <div class="pop-up6-bg"> 
+                       <div class="animate animate--delay-2s"> <img src="./images/pop-up6-bg.png" alt=""></div>
+                      <div class="pop-up6-icons animate animate--delay-4s"><img src="./images/pop-up6-icons.png" alt=""></div> 
                      </div>
                   </div>
                   <div class="pop-up__1">
-                     <div class="dot__outer">
+                     <div class="dot__outer animateDot animateDot--delay-2s">
                         <div class="dot"></div>
                      </div>
-                     <div class="info__left">
+                     <div class="info__left animateStep animateStep--delay-3s">
                         Lorem ipsum dolor sit, amet consectetur adipisicing
                      </div>
                   </div>
                   <div class="pop-up__2">
-                     <div class="dot__outer">
+                     <div class="dot__outer animateDot animateDot--delay-4s">
                         <div class="dot"></div>
                      </div>
-                     <div class="info__left">
+                     <div class="info__left animateStep animateStep--delay-6s">
                         Lorem ipsum dolor sit, amet consectetur adipisicing
                      </div>
                   </div>
-                  <div class="content__mobile"><img src="./images/mobile__content__6.png" alt=""></div>
+                  <div class="pop-up__3">
+                     <div class="dot__outer animateDot animateDot--delay-6s">
+                        <div class="dot"></div>
+                     </div>
+                     <div class="info__right animateStep animateStep--delay-9s">
+                        9 delay
+                     </div>
+                  </div>
+                  <div class="pop-up__4">
+                     <div class="dot__outer animateDot animateDot--delay-8s">
+                        <div class="dot"></div>
+                     </div>
+                     <div class="info__right animateStep animateStep--delay-12s">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                     </div>
+                  </div>
+                  <div class="mobile animatedMobile">
+                     <img src="./images/phone.png" alt="">
+                  </div>
+                  <div class="animatedMobile content__mobile"><img src="./images/mobile__content__6.png" alt=""></div>
                </div>
-               <div class="leptop__content content__7">
-                  <div class="content__leptop"><img src="./images/leptop__content__7.png" alt=""></div>
-                  <div class="content__mobile"><img src="./images/mobile__content__7.png" alt=""></div>
+               <div class="leptop__content content__7 animate-children">
+                  <div class="content__leptop"><img src="./images/leptop__content__7.png" alt="">
+                    <div class="live-icon">
+                     <div>
+                        <div class="live-title"> 
+                          <div class="animate animate--delay-2s"><img src="./images/liveIcon.png" alt=""></div> 
+                          <div class="animate animate--delay-4s"><img src="./images/Live-text.png" alt=""></div> 
+                        </div>
+                        <div class="animate animate--delay-6s">
+                           <img src="./images/Live-icons.png" alt="">
+                        </div>
+                        <div>
+                           <div class="live-popups ">
+                             <div class="live-popup1">
+                              <div class="dot__outer animateDot animateDot--delay-2s">
+                                 <div class="dot"></div>
+                              </div>
+                              <div class="info__left animateStep animateStep--delay-3s">
+                                 Lorem ipsum dolor sit, amet consectetur adipisicing
+                              </div>
+                             </div>
+                             <div class="live-popup2">
+                              <div class="dot__outer animateDot animateDot--delay-4s">
+                                 <div class="dot"></div>
+                              </div>
+                              <div class="info__left animateStep animateStep--delay-6s">
+                                 Lorem ipsum dolor sit, amet consectetur adipisicing
+                              </div>
+                             </div>
+                             <div class="live-popup3">
+                              <div class="dot__outer animateDot animateDot--delay-6s">
+                                 <div class="dot"></div>
+                              </div>
+                              <div class="info__left animateStep animateStep--delay-9s">
+                                 Lorem ipsum dolor sit, amet consectetur adipisicing
+                              </div>
+                             </div>
+                             <div class="live-popup4">
+                              <div class="dot__outer animateDot animateDot--delay-8s">
+                                 <div class="dot"></div>
+                              </div>
+                              <div class="info__left animateStep animateStep--delay-12s">
+                                 Lorem ipsum dolor sit, amet consectetur adipisicing
+                              </div>
+                             </div>
+                             <div class="live-popup5">
+                              <div class="dot__outer animateDot animateDot--delay-10s">
+                                 <div class="dot"></div>
+                              </div>
+                              <div class="info__left animateStep animateStep--delay-15s">
+                                 Lorem ipsum dolor sit, amet consectetur adipisicing
+                              </div>
+                             </div>  
+                             <div class="live-popup6">
+                              <div class="dot__outer animateDot animateDot--delay-12s">
+                                 <div class="dot"></div>
+                              </div>
+                              <div class="info__right animateStep animateStep--delay-18s">
+                                 Lorem ipsum dolor sit, amet consectetur adipisicing
+                              </div>
+                             </div>  
+                             <div class="live-popup7">
+                              <div class="dot__outer animateDot animateDot--delay-14s">
+                                 <div class="dot"></div>
+                              </div>
+                              <div class="info__right animateStep animateStep--delay-21s">
+                                 Lorem ipsum dolor sit, amet consectetur adipisicing
+                              </div>
+                             </div>                                    
+                           </div>
+                        </div>
+                     </div>
+                  </div> 
+                  </div>
+                  <div class="mobile animatedMobile">
+                     <img src="./images/phone.png" alt="">
+                  </div>
+                  <div class="animatedMobile content__mobile"><img src="./images/mobile__content__7.png" alt=""></div>
                </div>
                
          </div>
